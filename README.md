@@ -118,7 +118,7 @@ This can also be done with [Effect Convenience Funcs](#effect-convenience-funcs)
 ```swift
 let pix = CameraPIX()._gamma(2.0)._invert()._hue(0.5)._saturation(0.5)._blur(0.25)
 ```
-Though it is not as efficient as two LevelsPIXs, a HueSaturationPIXs will be created.
+Though this is not as efficient as a single copy of LevelsPIX and HueSaturationPIX.
 
 Remember to add `NSCameraUsageDescription` to your info.plist
 
